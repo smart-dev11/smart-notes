@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #121212;
+  color: white;
+}
+
+/* App bar */
+.app-bar {
+  height: 56px;
+  background: #1f1f1f;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+/* App container */
+.app {
+  padding: 16px;
+  padding-bottom: 100px;
+}
+
+/* Inputs */
+textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  background: #1f1f1f;
+  color: white;
+}
+
+/* Notes list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: #1e1e1e;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Priority colors */
+.note-low { border-left: 6px solid #4caf50; }
+.note-medium { border-left: 6px solid #ff9800; }
+.note-high { border-left: 6px solid #f44336; }
+
+/* Buttons */
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+/* FAB */
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #4caf50;
+  font-size: 28px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-box {
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 16px;
+  width: 85%;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cancel {
+  background: #f44336;
+}

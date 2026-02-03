@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1f1f1f">
+</head>
+<body>
+
+  <!-- Top App Bar -->
+  <div class="app-bar">
+    <span class="app-title">Smart Notes</span>
+  </div>
+
+  <!-- Main App -->
+  <div class="app">
+    <textarea id="noteInput" placeholder="Write your note..."></textarea>
+
+    <select id="sortSelect" onchange="sortNotes()">
+      <option value="recent">Recently Added</option>
+      <option value="priority">By Priority</option>
+    </select>
+
+    <ul id="notesList"></ul>
+  </div>
+
+  <!-- Floating Action Button -->
+  <button class="fab" onclick="addNote()">+</button>
+
+  <!-- Edit Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <h3>Edit Note</h3>
+
+      <textarea id="editInput"></textarea>
+
+      <label>Priority</label>
+      <select id="prioritySelect">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <div class="modal-actions">
+        <button onclick="saveEdit()">Save</button>
+        <button class="cancel" onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
