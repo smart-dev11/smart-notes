@@ -76,5 +76,5 @@ function render() {
 
 render();
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
+  navigator.serviceWorker.register("/smart-notes/sw.js");
 }
