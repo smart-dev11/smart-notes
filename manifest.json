@@ -1,7 +1,7 @@
 {
   "name": "Smart Notes",
   "short_name": "SmartNotes",
-  "start_url": "/smart-notes/index.html",
+  "start_url": "/smart-notes/",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#6200ea",
